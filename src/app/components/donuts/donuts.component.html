@@ -1,0 +1,6 @@
+<h1><u>Donuts</u></h1>
+@for(d of donutsResult.results; track d.id) {
+    <h1>{{d.name}}</h1>
+    <img src="{{d.photo}}">
+    <a href="{{d.photo_attribution}}">Image link</a>
+}

@@ -1,0 +1,17 @@
+<h1><u>Famous People</u></h1>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Innovation</th>
+    <th>Year</th>
+  </tr>
+  @for(p of famousPeopleResult.complete; track $index) {
+    <tr>
+        <td>{{p.firstName}}</td>
+        <td>{{p.lastName}}</td>
+        <td>{{p.innovation}}</td>
+        <td>{{p.year}}</td>
+    </tr>
+  }
+</table>
